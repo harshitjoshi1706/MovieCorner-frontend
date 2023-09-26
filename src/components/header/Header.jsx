@@ -11,16 +11,20 @@ const headerNav = [
         display: 'Home',
         path: '/'
     },
-    // {
-    //     display: 'Movies',
-    //     path: '/movie'
-    // },
+    {
+        display: 'Movies',
+        path: '/movie'
+    },
     {
         display: 'TV Series',
         path: '/tv'
     },
     {
-        display: 'Sign-Up',
+        display: 'Login',
+        path: '/Login'
+    },
+    {
+        display: 'SignUp',
         path: '/Signup'
     }
 ];
@@ -51,7 +55,7 @@ const Header = () => {
             <div className="header__wrap container">
                 <div className="logo">
                     {/* <img src={logo} alt="" /> */}
-                    <Link to="/">SeriesCorner</Link>
+                    <Link to="/">MovieCorner</Link>
                 </div>
                 <ul className="header__nav">
                     {

@@ -45,7 +45,7 @@ const HeroSlide = () => {
                     movieItems.map((item, i) => (
                         <SwiperSlide key={i}>
                             {({ isActive }) => (
-                                <HeroSlideItem item={item} className={`${isActive ? 'false' : ''}`} />
+                                <HeroSlideItem item={item} className={`${isActive ? 'active' : ''}`} />
                             )}
                         </SwiperSlide>
                     ))
@@ -99,9 +99,9 @@ const HeroSlideItem = props => {
                         </OutlineButton>
                     </div>
                 </div>
-                <div className="hero-slide__item__content__poster">
+                {/* <div className="hero-slide__item__content__poster">
                     <img src={apiConfig.w500Image(item.poster_path)} alt="" />
-                </div>
+                </div> */}
             </div>
         </div>
     )
